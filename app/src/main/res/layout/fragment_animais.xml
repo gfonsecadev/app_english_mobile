@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5e9b9"
+    tools:context=".numeros.NumerosFragment">
+
+    <ImageButton
+        android:id="@+id/cao"
+        android:layout_width="123dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cao"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <ImageButton
+        android:id="@+id/gato"
+        android:layout_width="123dp"
+        android:layout_height="135dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/gato"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/macaco"
+        android:layout_width="123dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/macaco"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/cao" />
+
+    <ImageButton
+        android:id="@+id/ovelha"
+        android:layout_width="123dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ovelha"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/gato" />
+
+    <ImageButton
+        android:id="@+id/vaca"
+        android:layout_width="123dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/vaca"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/macaco" />
+
+    <ImageButton
+        android:id="@+id/leao"
+        android:layout_width="123dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/leao"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/ovelha" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:text="Criado por Gilmar A.F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leao"
+        app:layout_constraintVertical_bias="0.287"
+        tools:layout_editor_absoluteX="0dp"></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
