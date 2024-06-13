@@ -9,7 +9,7 @@
 
     <ImageButton
         android:id="@+id/dois"
-        android:layout_width="123dp"
+        android:layout_width="145dp"
         android:layout_height="135dp"
         android:layout_marginTop="50dp"
         android:scaleType="centerCrop"
@@ -24,18 +24,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.13"/>
+        app:layout_constraintGuide_percent="0.1"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.87" />
+        app:layout_constraintGuide_percent="0.9" />
 
     <ImageButton
         android:id="@+id/um"
-        android:layout_width="123dp"
+        android:layout_width="145dp"
         android:layout_height="135dp"
         android:layout_marginTop="50dp"
         android:scaleType="centerCrop"
@@ -46,60 +46,56 @@
 
     <ImageButton
         android:id="@+id/tres"
-        android:layout_width="123dp"
+        android:layout_width="145dp"
         android:layout_height="135dp"
-        android:layout_marginTop="200dp"
         android:background="@android:color/transparent"
         android:scaleType="centerCrop"
         android:src="@drawable/tres"
+        app:layout_constraintBottom_toTopOf="@+id/cinco"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/um" />
 
     <ImageButton
         android:id="@+id/quatro"
-        android:layout_width="123dp"
+        android:layout_width="145dp"
         android:layout_height="135dp"
-        android:layout_marginTop="200dp"
         android:background="@android:color/transparent"
         android:scaleType="centerCrop"
         android:src="@drawable/quatro"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/dois"
+        app:layout_constraintBottom_toTopOf="@id/seis"/>
 
     <ImageButton
         android:id="@+id/seis"
-        android:layout_width="123dp"
+        android:layout_width="145dp"
         android:layout_height="135dp"
-        android:layout_marginTop="47dp"
+        android:layout_marginBottom="50dp"
         android:background="@android:color/transparent"
         android:scaleType="centerCrop"
         android:src="@drawable/seis"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-
-        app:layout_constraintTop_toBottomOf="@+id/quatro"/>
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+       />
 
     <ImageButton
         android:id="@+id/cinco"
-        android:layout_width="123dp"
+        android:layout_width="145dp"
         android:layout_height="135dp"
-        android:layout_marginTop="47dp"
+        android:layout_marginBottom="50dp"
         android:background="@android:color/transparent"
         android:scaleType="centerCrop"
         android:src="@drawable/cinco"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/tres" />
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
+        android:text="\u00a9  Gilmar A.Fonseca"
         android:textStyle="italic"
-        android:text="Criado por Gilmar A.F"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/leao"
-        app:layout_constraintVertical_bias="0.287"
-        tools:layout_editor_absoluteX="0dp"
-        ></TextView>
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
